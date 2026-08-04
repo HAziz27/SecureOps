@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 import { LayoutDashboard, CheckSquare, Users, Settings, Shield, Wifi, Activity, FileText, Lock, Upload } from "lucide-react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -51,15 +52,16 @@ export default function App() {
       {/* Sidebar Navigation */}
       <aside className="sidebar">
         <div className="nav-group">
-              <div style={{ marginBottom: "24px" }}>
-                <LazyLoadImage
-                 alt="Lloyds Bank official logo"
-                  effect="blur"
-                 src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Lloyds_Bank_logo.svg/1200px-Lloyds_Bank_logo.svg.png"
-width="150"
-                    height="50"
-            />
-          </div>
+<div style={{ marginBottom: "24px", minHeight: "50px", backgroundColor: "#f0f0f0" }}>
+<LazyLoadImage
+  alt="Lloyds Bank official logo"
+  effect="blur"
+  src="https://www.reinsurancene.ws/wp-content/uploads/2025/06/lloyds-bank.jpg"
+  width="150"
+  height="50"
+  visibleByDefault={true} // Add this line to force it to load immediately
+/>
+</div>
 
           <button className="nav-button"><LayoutDashboard size={16} /> Dashboard</button>
           <button className="nav-button active"><CheckSquare size={16} /> Task Workspace</button>

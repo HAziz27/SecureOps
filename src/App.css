@@ -181,4 +181,12 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+  .sidebar img, 
+.sidebar .lazy-load-image-background {
+  display: block !important;
+  width: 150px !important; /* Force width */
+  height: 50px !important;  /* Force height */
+  object-fit: contain;     /* Ensures the image isn't stretched */
+}
 }

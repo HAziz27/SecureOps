@@ -1,16 +1,61 @@
-# React + Vite
+# App Development Practical - Project Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Project Overview
+* **Description**: A modern React application built with Vite, utilizing modern component-driven architecture and optimized performance plugins.
+* **Target Audience**: Academic assessors, evaluators, and developers reviewing this practical project repository.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Setup & Deployment Instructions
 
-## React Compiler
+### Local Development
+To run this application locally on your machine, follow these steps:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# 1. Clone the repository
+git clone [https://github.com/HAziz27/app-development-practical-1.git](https://github.com/HAziz27/app-development-practical-1.git)
 
-## Expanding the ESLint configuration
+# 2. Navigate to the project directory
+cd app-development-practical-1
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 3. Install dependencies
+npm install
+
+# 4. Start the local development server (with HMR)
+npm run dev
+
+```
+
+### Production Deployment
+
+* **Hosting Platform**: AWS Amplify
+* **Live Application URL**: [https://main.d2zuk65btt1iq2.amplifyapp.com](https://www.google.com/search?q=https://main.d2zuk65btt1iq2.amplifyapp.com)
+* **CI/CD Pipeline**: Automated deployment configured via GitHub integration.
+
+---
+
+## 🛠️ Dependencies & SDKs Used
+
+| Dependency / Plugin | Purpose |
+| --- | --- |
+| **React** | Core UI library for component structure |
+| **Vite** | Build tool and development server with HMR |
+| **@vitejs/plugin-react** or **@vitejs/plugin-react-swc** | Vite plugins supporting React compilation |
+| **ESLint** | Code quality and linting configuration |
+
+---
+
+## 🔍 Known Issues & Future Improvements
+
+### Known Issues
+
+* Default Vite template configurations require manual customization for specific cloud deployment headers and asset path handling.
+
+### Future Improvements
+
+* **React Compiler:** Evaluate enabling the React Compiler for advanced performance optimization.
+* **TypeScript Integration:** Transition to type-aware lint rules and the official Vite TypeScript template for stricter production type-checking.
+
+```
+
+```
