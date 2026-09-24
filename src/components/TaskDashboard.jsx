@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { mockTasks } from '../utils/mockData';
+import { mockTasks } from '../utils/taskData';
 
 export default function TaskDashboard() {
   const [tasks] = useState(mockTasks);
