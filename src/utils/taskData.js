@@ -14,7 +14,7 @@ export const INITIAL_MY_CHECKLISTS = [
         status: "completed", 
         evidenceLocked: true, 
         evidenceFile: "confluence_tracker_link.pdf",
-        assignee: "M. Singh",
+        assignee: "Maya Singh",
         dueDate: "Jun 14",
         track: "Deploy Auth Changes",
         auditTrail: [
@@ -32,7 +32,7 @@ export const INITIAL_MY_CHECKLISTS = [
         status: "completed", 
         evidenceLocked: true, 
         evidenceFile: "local_repo_update_log.pdf",
-        assignee: "M. Singh",
+        assignee: "Maya Singh",
         dueDate: "Jun 14",
         track: "Deploy Auth Changes",
         auditTrail: [
@@ -49,7 +49,7 @@ export const INITIAL_MY_CHECKLISTS = [
         usefulLink: "",
         status: "completed", 
         evidenceLocked: false,
-        assignee: "M. Singh",
+        assignee: "Maya Singh",
         dueDate: "Jun 18",
         track: "Deploy Auth Changes",
         auditTrail: [
@@ -65,7 +65,7 @@ export const INITIAL_MY_CHECKLISTS = [
         usefulLink: "",
         status: "in-progress", 
         evidenceLocked: false,
-        assignee: "M. Singh",
+        assignee: "Maya Singh",
         dueDate: "Jun 19",
         track: "Deploy Auth Changes",
         auditTrail: [
@@ -103,7 +103,8 @@ export const INITIAL_TEMPLATES = [
 export const INITIAL_TEAM_MEMBERS = [
   {
     id: "user-1",
-    name: "A. Taylor",
+    employeeId: "EMP-84920",
+    name: "Alex Taylor",
     role: "Senior Platform Engineer",
     checklists: [
       {
@@ -117,7 +118,8 @@ export const INITIAL_TEAM_MEMBERS = [
   },
   {
     id: "user-2",
-    name: "J. Doe",
+    employeeId: "EMP-10492",
+    name: "Jordan Doe",
     role: "DevSecOps Specialist",
     checklists: [
       {

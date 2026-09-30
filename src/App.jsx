@@ -13,14 +13,12 @@ export default function App() {
   const [templates, setTemplates] = useState(INITIAL_TEMPLATES);
   const [teamMembers, setTeamMembers] = useState(INITIAL_TEAM_MEMBERS);
 
-  // Assign template to "My Checklists"
   const handleAssignTemplate = (tmpl) => {
     const newChecklist = {
       id: `chk-${Date.now()}`,
       title: tmpl.title,
       track: tmpl.track,
-      owner: 'M. Singh',
-      createdAt: 'Today',
+      status: 'In Progress',
       tasks: tmpl.tasks.map((s, idx) => ({
         id: `t_${Date.now()}_${idx}`,
         step: s.step || idx + 1,
@@ -29,8 +27,9 @@ export default function App() {
         usefulLink: s.usefulLink || '',
         status: 'todo',
         evidenceLocked: false,
-        assignee: 'M. Singh',
+        assignee: 'Maya Singh',
         dueDate: 'Jul 01',
+        track: tmpl.track,
         auditTrail: [{ text: "Task opened", time: "Just now" }]
       }))
     };
@@ -39,7 +38,6 @@ export default function App() {
     setActiveTab('my-checklists');
   };
 
-  // Create new checklist from Template Directory
   const handleCreateNewChecklist = (newChk) => {
     setMyChecklists([newChk, ...myChecklists]);
     setActiveTab('my-checklists');
@@ -51,17 +49,16 @@ export default function App() {
 
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden' }}>
         
-        {/* Top User Profile Header */}
+        {/* Top User Profile Header with Maya Singh */}
         <div className="app-header-bar">
           <div className="user-profile-pill">
             <div className="user-avatar-circle">MS</div>
-            <span>Logged in as <strong>M. Singh</strong></span>
+            <span>Logged in as <strong>Maya Singh</strong></span>
             <ShieldCheck size={14} color="var(--primary-green)" style={{ marginLeft: '4px' }} />
           </div>
         </div>
 
-        {/* Tab Content Area driven by Sidebar */}
-        <div style={{ flex: 1, overflowY: 'auto' }}>
+        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column' }}>
           {activeTab === 'my-checklists' && (
             <TaskDashboard checklists={myChecklists} setChecklists={setMyChecklists} />
           )}
