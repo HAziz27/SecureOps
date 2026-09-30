@@ -45,8 +45,6 @@ export default function TaskModal({ task, onClose, onUpdate }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        
-        {/* Modal Header */}
         <div className="modal-header">
           <div>
             <div style={{ fontSize: '11px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#7BAE98', marginBottom: '6px' }}>
@@ -69,15 +67,12 @@ export default function TaskModal({ task, onClose, onUpdate }) {
           </button>
         </div>
 
-        {/* Modal Body - Split Grid */}
         <div className="modal-body">
           <div style={{ fontSize: '12px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-muted)' }}>
             Task Details & Evidence Capture
           </div>
 
           <div className="modal-grid" style={{ gap: '32px' }}>
-            
-            {/* Left Column */}
             <div className="modal-column" style={{ justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
@@ -114,7 +109,6 @@ export default function TaskModal({ task, onClose, onUpdate }) {
                 )}
               </div>
 
-              {/* Metadata Card Positioned at Bottom Left */}
               <div className="metadata-box" style={{ padding: '16px 20px', gap: '10px', fontSize: '14px', marginTop: '24px' }}>
                 <div className="metadata-row">
                   <span className="metadata-label">Assignee</span>
@@ -131,7 +125,6 @@ export default function TaskModal({ task, onClose, onUpdate }) {
               </div>
             </div>
 
-            {/* Right Column */}
             <div className="modal-column" style={{ gap: '24px' }}>
               <div>
                 <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Execution Evidence *</div>
@@ -232,7 +225,6 @@ export default function TaskModal({ task, onClose, onUpdate }) {
                 </p>
               </div>
 
-              {/* Task-Specific Audit Trail with Scroll */}
               <div className="modal-audit-box" style={{ gap: '12px' }}>
                 <div className="modal-section-title" style={{ fontSize: '12px', display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <History size={13} /> Audit Trail
@@ -246,13 +238,10 @@ export default function TaskModal({ task, onClose, onUpdate }) {
                   ))}
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
 
-        {/* Modal Footer (Left button removed) */}
         <div className="modal-footer" style={{ justifyContent: 'flex-end' }}>
           <button 
             onClick={onClose}
@@ -273,7 +262,6 @@ export default function TaskModal({ task, onClose, onUpdate }) {
             <CheckCircle2 size={16} /> Save & Close Workspace
           </button>
         </div>
-
       </div>
     </div>
   );
