@@ -15,9 +15,6 @@ export const INITIAL_TASKS = [
       { text: "Evidence locked", time: "Sep 30, 08:55 AM" },
       { text: "Status → Completed", time: "Sep 30, 08:54 AM" },
       { text: "Task opened", time: "Jun 14, 09:00 AM" },
-      { text: "Assignee updated", time: "Jun 14, 09:15 AM" },
-      { text: "Track assigned", time: "Jun 14, 09:30 AM" },
-      { text: "Initial review started", time: "Jun 14, 10:00 AM" }
     ]
   },
   { 
