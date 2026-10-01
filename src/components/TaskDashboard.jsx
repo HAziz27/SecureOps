@@ -118,7 +118,7 @@ export default function TaskDashboard({ checklists, setChecklists }) {
 
             <div className="metrics-panel">
               <div className="task-card" style={{ flexDirection: 'column', alignItems: 'stretch', padding: '24px', cursor: 'default' }}>
-                <div className="metrics-header"><Activity size={16} /> TASK METRICS</div>
+                <div className="metrics-header"><Activity size={16} /> PROGRESS TRACKER</div>
                 
                 <div className="donut-container">
                   <div 
