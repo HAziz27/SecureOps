@@ -136,13 +136,8 @@ export default function TaskDashboard({ checklists, setChecklists }) {
                       <div className="donut-label">Complete</div>
                     </div>
                   </div>
-                  
-                  <div className="legend-container">
-                    <div className="legend-item"><span className="legend-dot" style={{ backgroundColor: 'var(--status-done-bg)' }}></span> Done</div>
-                    <div className="legend-item"><span className="legend-dot" style={{ backgroundColor: 'var(--status-prog-bg)' }}></span> Active</div>
-                    <div className="legend-item"><span className="legend-dot" style={{ backgroundColor: 'var(--status-todo-bg)' }}></span> Pending</div>
-                  </div>
                 </div>
+           
 
                 <div className="metric-grid">
                   <div className="metric-box" style={{ backgroundColor: 'var(--status-done-bg)', color: 'var(--status-done-text)' }}>
