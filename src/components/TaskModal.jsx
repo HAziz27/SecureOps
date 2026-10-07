@@ -68,10 +68,6 @@ export default function TaskModal({ task, onClose, onUpdate }) {
         </div>
 
         <div className="modal-body">
-          <div style={{ fontSize: '12px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-muted)' }}>
-            Task Details & Evidence Capture
-          </div>
-
           <div className="modal-grid" style={{ gap: '32px' }}>
             <div className="modal-column" style={{ justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
