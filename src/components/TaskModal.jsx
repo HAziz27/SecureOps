@@ -76,7 +76,7 @@ export default function TaskModal({ task, onClose, onUpdate }) {
             <div className="modal-column" style={{ justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div>
-                  <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Execution Instructions</div>
+                  <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Step Instructions</div>
                   <p style={{ fontSize: '14px', lineHeight: '1.6', margin: 0, color: 'var(--text-main)' }}>
                     {task.description}
                   </p>
@@ -84,7 +84,7 @@ export default function TaskModal({ task, onClose, onUpdate }) {
 
                 {task.usefulLink && (
                   <div>
-                    <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Quick Actions</div>
+                    <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Useful Links</div>
                     <a 
                       href={task.usefulLink} 
                       target="_blank" 
@@ -127,7 +127,7 @@ export default function TaskModal({ task, onClose, onUpdate }) {
 
             <div className="modal-column" style={{ gap: '24px' }}>
               <div>
-                <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Execution Evidence *</div>
+                <div className="modal-section-title" style={{ fontSize: '12px', marginBottom: '10px' }}>Evidence Capture*</div>
                 
                 {task.evidenceLocked ? (
                   <div 
