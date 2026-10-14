@@ -63,7 +63,7 @@ export default function ChecklistDirectory({ checklists, onSelectChecklist, onCr
       <div className="directory-top-bar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
           <h2 style={{ fontSize: '22px', fontWeight: 'bold', margin: 0, color: 'var(--text-main)' }}>
-            {isTemplateMode ? 'Template Directory' : 'My Checklists'}
+            {isTemplateMode ? 'Checklist Directory' : 'My Checklists'}
           </h2>
           <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>
             {isTemplateMode ? 'Search pre-created checklists to assign to yourself or create new custom templates.' : 'Monitor and manage the active compliance checklists you are working on.'}

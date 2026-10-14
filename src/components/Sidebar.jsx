@@ -54,7 +54,7 @@ export default function Sidebar({ activeTab, setActiveTab }) {
             fontFamily: 'inherit'
           }}
         >
-          <Search size={18} /> Template Directory
+          <Search size={18} /> Checklist Directory
         </button>
 
         <button 
