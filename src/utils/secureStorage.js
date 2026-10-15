@@ -1,6 +1,6 @@
 import CryptoJS from 'crypto-js';
 
-const SECRET_KEY = process.env.REACT_APP_ENCRYPTION_KEY || 'secure-ops-dev-key-2026';
+const SECRET_KEY = process.env.REACT_APP_ENCRYPTION_KEY;
 
 export const saveSecureData = (storageKey, data) => {
   try {
